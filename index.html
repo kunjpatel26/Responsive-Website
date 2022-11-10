@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth Cleaning Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+    
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo.png" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="" id="aboutus">About us</a></li>
+                    <li><a href="login2.html">login</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Best Laundry Work</h1>
+            <p>We provide different kind of services(Dry cleaning,Steam Ironing,Washing)</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="service">
+        <h1>Services we Provide</h1>
+        <div class="row">
+            <div class="service-col">
+                <h3>Dry Cleaning</h3>
+            </div>
+            <div class="service-col">
+                <h3>Steam Ironing</h3>
+            </div>
+            <div class="service-col">
+                <h3>Washing</h3>
+            </div>
+        </div>
+
+    </section>
+    <!-- Pricing -->
+    <section class="price">
+        <h1>Pricing According to cloths</h1>
+        <p>Our cost of different services is very low.</p>
+        <div class="row">
+            <div class="price-col">
+                <img src="dry.png">
+                <div class="layer">
+                    <h3>Dry Cleaning</h3>
+                </div>
+            </div>
+            <div class="price-col">
+                <img src="l3.png">
+                <div class="layer">
+                    <h3>Ironing</h3>
+                </div>
+            </div>
+            <div class="price-col">
+                <img src="l2.jpeg">
+                <div class="layer">
+                    <h3>Washing</h3>
+                </div>
+            </div>      
+        </div>
+        
+
+    </section>
+
+    <section class="about-us" id="aboutus">
+        <h1>About us</h1>
+    </section>
+
+    <section>
+        <div class="c1">
+
+            <h1>LAUNDRY BELONGS IN A LAUNDROMAT</h1><br>
+            <p>An average human spends between 12000 hours of their adult life in cleaning and managing their clothes.<br> We have all grown up
+                on a heavy dose of detergent commercials propagating the idea of ‘whiter the better’</p>
+        </div>
+    </section>
+<br><br>
+
+    <section class="footer">
+        <hr>
+        
+        <h3>Contact us</h3>
+        <p class="f"><i class="fa fa-envelope" ></i>clothcleaning@gmail.com</p>
+        <p class="f"><i class="fa fa-phone"></i>+91 8456789651</p>
+
+        
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+        
+
+    </section>
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+        $("#aboutus").click(function(){
+           // any value you need
+           $(document).scrollTop(100) 
+           });
+
+    </script>
+</body>
+</html>
